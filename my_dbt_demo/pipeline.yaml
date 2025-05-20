@@ -1,0 +1,10 @@
+name: dlt-dbt-pipeline
+edition: core
+cluster:
+  autoscale:
+    min_workers: 1
+    max_workers: 4
+libraries:
+  - dbt:
+      project: ./my_dbt_demo     # Path to dbt project
+      profiles_dir: ./my_dbt_demo  # Where your dbt profiles.yml lives
